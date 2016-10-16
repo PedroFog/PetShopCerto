@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 93%;
+            height: 359px;
+        }
+        .auto-style2 {
+            height: 326px;
+            background-color: #FFFFCC;
+        }
+        .auto-style3 {
+            height: 255px;
+            background-color: #FFFFCC;
+        }
+        .auto-style4 {
+            height: 167px;
+            background-color: #FFFFCC;
+        }
+        .auto-style5 {
+            height: 255px;
+            width: 158px;
+            background-color: #FFFFCC;
+        }
+        .auto-style6 {
+            height: 326px;
+            width: 158px;
+            background-color: #FFFFCC;
+        }
+        .auto-style7 {
+            height: 255px;
+            width: 463px;
+        }
+        .auto-style8 {
+            height: 326px;
+            width: 463px;
+            background-color: #FFFFCC;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style4" colspan="3">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem Text="Cadastro" Value="Cadastro">
+                                <asp:MenuItem NavigateUrl="~/Clientes.aspx" Text="Cliente" Value="Cliente"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Animais.aspx" Text="Animal" Value="Animal"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Tratamentos.aspx" Text="Tratamento" Value="Tratamento"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Cidades.aspx" Text="Cidade" Value="Cidade"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style7">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style3"></td>
+            </tr>
+            <tr>
+                <td class="auto-style6">&nbsp;</td>
+                <td class="auto-style8"></td>
+                <td class="auto-style2"></td>
+            </tr>
+        </table>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
